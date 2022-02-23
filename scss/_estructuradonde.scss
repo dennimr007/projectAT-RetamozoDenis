@@ -1,0 +1,79 @@
+/*DondeEstamos*/
+#gridDondeEstamos {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "titulo titulo titulo"
+        "ubicacion ubicacion ubicacion"
+        "mapa mapa mapa"
+        "direccion localExterior localExterior"
+        "fotos fotos fotos"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+
+}
+
+.titulo {
+    grid-area: titulo;
+
+}
+
+h3 {
+    .ubicacion {
+        grid-area: ubicacion;
+        margin: 10px 10px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        text-align: center;
+    }
+}
+
+
+.mapa {
+    grid-area: mapa;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    width: 60%;
+    margin-left: 23%;
+    justify-content: center;
+}
+
+
+.localExterior {
+    grid-area: localExterior;
+    width: 80%;
+    margin: 5px 5px 5px 25%;
+    padding: 5px 5px 5px 5px;
+}
+
+.direccion {
+    grid-area: direccion;
+    font-family: 'Poppins', italic;
+    font-size: 24px;
+    margin: 10px 10px 10px 10px;
+    padding: 7px 7px 7px 7px;
+}
+
+.fotos {
+    grid-area: fotos;
+    display: flex;
+    width: 90%;
+}
+
+.fotosCiudad1 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.fotosCiudad2 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.fotosCiudad3 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}

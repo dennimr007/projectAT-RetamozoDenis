@@ -1,0 +1,62 @@
+/*Quienes Somos*/
+#gridQuienes {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "titulo titulo titulo"
+        "encabezado encabezado encabezado"
+        "parrafo1 parrafo1 parrafo1"
+        "parrafo2 parrafo2 parrafo2"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+
+.titulo {
+    grid-area: titulo;
+}
+
+.encabezado {
+    grid-area: encabezado;
+
+    .encabezado2 {
+        display: flex;
+        flex-flow: row;
+        
+    }
+
+    .encabezadoimg {
+        margin: 5px 5px 5px 5px;
+        padding: 7px 7px 7px 7px;
+        width: 40%;
+
+    }
+
+
+    h3 {
+        .descripcion1 {
+            margin: 5px;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    align-content: center;
+
+    .parrafos {
+        .parrafo1 {
+            margin: 5px 5px 5px 5px;
+            font-size: 20px;
+        }
+
+        .parrafo2 {
+            margin: 5px 5px 5px 5px;
+            font-size: 20px;
+        }
+    }
+
+}

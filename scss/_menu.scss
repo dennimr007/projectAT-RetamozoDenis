@@ -1,0 +1,55 @@
+.menu {
+    background-color: pink;
+    border: solid 8px white;
+    display: flex;
+    flex-flow: row;
+
+    a {
+        .logo {
+            margin: 10px 10px 10px 10px;
+            width: 200px;
+            height: 200px;
+
+        }
+    }
+}
+
+
+
+.menuNavegacion {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+    padding: 7px;
+    width: 100%;
+    font-size: 4vh;
+
+    ul {
+        .menuBoton {
+            background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%);
+            margin: 5px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: inline-block;
+
+            &:hover {
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+
+        }
+        
+        }
+        .menu_Boton{
+            @extend .menuBoton;
+            background-image: linear-gradient(to right, #f07a8e 0%, #ffc3a0 51%, #e4647a 100%);
+            
+
+        }
+    }
+}

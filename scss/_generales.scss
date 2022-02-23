@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: pink;
+}
+/*Titulos*/
+h2 {
+    margin: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', italic;
+}
+
+h2 {
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 5px 5px 5px;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+
+/*Footer*/
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    font-size: 3vh;
+    border-top: solid white 3px;
+
+    .facebookPie {
+        width: 25px;
+        height: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .instagramPie {
+        width: 25px;
+        height: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+
+    .whatsappPie {
+        width: 25px;
+        height: 25px;
+        margin: 5px 5px 5px 5px;
+    }
+
+
+}

@@ -1,0 +1,15 @@
+/*mapa*/
+$socialMedia:(
+    facebook: #18429e,
+    instagram: rgb(212, 33, 87),
+    whatsapp: rgb(30, 173, 30),
+
+);
+
+@each $clave,$valor in $socialMedia {
+    .boton-#{$clave} {
+        background-color: $valor;
+        border: $valor;
+    }
+
+}

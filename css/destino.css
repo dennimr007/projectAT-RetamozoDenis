@@ -1,0 +1,342 @@
+/*prueba*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: pink; }
+
+/*Titulos*/
+h2 {
+  margin: 5px;
+  text-align: center; }
+
+h2 {
+  font-family: 'Poppins', italic; }
+
+h2 {
+  -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 5px 5px 5px; }
+
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+    transform: translateZ(-700px);
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1; } }
+
+/*Footer*/
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  font-size: 3vh;
+  border-top: solid white 3px; }
+  footer .facebookPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
+  footer .instagramPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
+  footer .whatsappPie {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px 5px 5px; }
+
+.menu {
+  background-color: pink;
+  border: solid 8px white;
+  display: flex;
+  flex-flow: row; }
+  .menu a .logo {
+    margin: 10px 10px 10px 10px;
+    width: 200px;
+    height: 200px; }
+
+.menuNavegacion {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+  padding: 7px;
+  width: 100%;
+  font-size: 4vh; }
+  .menuNavegacion ul .menuBoton, .menuNavegacion ul .menu_Boton {
+    background-image: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 51%, #FFAFBD 100%);
+    margin: 5px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block; }
+    .menuNavegacion ul .menuBoton:hover, .menuNavegacion ul .menu_Boton:hover {
+      background-position: right center;
+      color: #fff;
+      text-decoration: none; }
+  .menuNavegacion ul .menu_Boton {
+    background-image: linear-gradient(to right, #f07a8e 0%, #ffc3a0 51%, #e4647a 100%); }
+
+#gridHome {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "carousel carousel carousel" "info info info" "info info info" "info info info" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.menu {
+  grid-area: menu; }
+
+.titulo {
+  grid-area: titulo; }
+
+.carousel {
+  grid-area: carousel; }
+
+.slide {
+  width: 95%;
+  margin: 10px;
+  margin: 10px;
+  border-bottom: solid white 4px; }
+
+.info {
+  grid-area: info;
+  margin-top: 20px;
+  margin: 5px;
+  padding: 5px;
+  border-top: 1px solid white; }
+  .info .info1 {
+    display: flex;
+    flex-flow: row; }
+  .info .info2 {
+    display: flex;
+    flex-flow: row; }
+  .info .info3 {
+    display: flex;
+    flex-flow: row; }
+  .info .infoFoto {
+    margin: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
+    align-self: baseline;
+    width: 25%; }
+  .info .infoTexto {
+    text-align: center; }
+
+/*Contacto*/
+#gridContacto {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "contacForm contactForm contactForm" "pieForm pieForm pieForm" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.titulo {
+  grid-area: titulo;
+  font-size: 24px;
+  font-family: 'Poppins'; }
+
+form {
+  font-family: 'Poppins';
+  border: solid 5px white;
+  padding: 5px 5px 5px 5px;
+  margin: 3px 3px 3px 3px;
+  align-content: center;
+  font-size: 20px; }
+
+.contacForm {
+  grid-area: contacForm; }
+
+.pieForm {
+  grid-area: pieForm;
+  width: 100%;
+  margin: 5px 5px 5px 5px;
+  font-size: 18px;
+  display: flex;
+  flex-flow: row;
+  margin: 8px 8px 8px 8px;
+  padding: 5px 5px 5px 5px; }
+  .pieForm .textPie {
+    margin-bottom: 30px; }
+    .pieForm .textPie .facebook {
+      width: 130px;
+      height: 60px;
+      margin-top: 10px; }
+    .pieForm .textPie .instagram {
+      width: 140px;
+      height: 60px;
+      margin-top: 10px; }
+    .pieForm .textPie .whatsapp {
+      width: 160px;
+      height: 60px; }
+
+/*DondeEstamos*/
+#gridDondeEstamos {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "ubicacion ubicacion ubicacion" "mapa mapa mapa" "direccion localExterior localExterior" "fotos fotos fotos" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.titulo {
+  grid-area: titulo; }
+
+h3 .ubicacion {
+  grid-area: ubicacion;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  text-align: center; }
+
+.mapa {
+  grid-area: mapa;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  width: 60%;
+  margin-left: 23%;
+  justify-content: center; }
+
+.localExterior {
+  grid-area: localExterior;
+  width: 80%;
+  margin: 5px 5px 5px 25%;
+  padding: 5px 5px 5px 5px; }
+
+.direccion {
+  grid-area: direccion;
+  font-family: 'Poppins', italic;
+  font-size: 24px;
+  margin: 10px 10px 10px 10px;
+  padding: 7px 7px 7px 7px; }
+
+.fotos {
+  grid-area: fotos;
+  display: flex;
+  width: 90%; }
+
+.fotosCiudad1 {
+  width: 300px;
+  height: 300px;
+  margin: 10px; }
+
+.fotosCiudad2 {
+  width: 300px;
+  height: 300px;
+  margin: 10px; }
+
+.fotosCiudad3 {
+  width: 300px;
+  height: 300px;
+  margin: 10px; }
+
+/*Experiencia*/
+#gridExperiencia {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "video video video" "textExp2 textExp2 textExp2" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.titulo {
+  grid-area: titulo; }
+
+.video {
+  grid-area: video;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  width: 60%;
+  margin-left: 25%;
+  justify-content: center; }
+
+.textExp2 {
+  grid-area: textExp2;
+  margin: 5px 5px 5px 5px; }
+
+/*Quienes Somos*/
+#gridQuienes {
+  display: grid;
+  grid-template-areas: "menu menu menu" "titulo titulo titulo" "encabezado encabezado encabezado" "parrafo1 parrafo1 parrafo1" "parrafo2 parrafo2 parrafo2" "footer footer footer";
+  grid-column-gap: 3px;
+  grid-row-gap: 3px; }
+
+.titulo {
+  grid-area: titulo; }
+
+.encabezado {
+  grid-area: encabezado; }
+  .encabezado .encabezado2 {
+    display: flex;
+    flex-flow: row; }
+  .encabezado .encabezadoimg {
+    margin: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
+    width: 40%; }
+  .encabezado h3 .descripcion1 {
+    margin: 5px;
+    justify-content: space-around;
+    font-size: 20px; }
+
+.container {
+  width: 100%;
+  align-content: center; }
+  .container .parrafos .parrafo1 {
+    margin: 5px 5px 5px 5px;
+    font-size: 20px; }
+  .container .parrafos .parrafo2 {
+    margin: 5px 5px 5px 5px;
+    font-size: 20px; }
+
+/*destok*/
+@media (min-width: 992.98px) and (max-width: 1400px) {
+  body {
+    background: pink; } }
+
+/*tablet*/
+@media (min-width: 576.98px) and (max-width: 991.98px) {
+  body {
+    background: rgba(160, 30, 106, 0.815);
+    font-size: 4rem;
+    border: solid white 1px; } }
+
+/*smartphone*/
+@media screen and (max-width: 575.98px) {
+  body {
+    background: rgba(160, 30, 106, 0.815);
+    font-size: 4rem;
+    border: solid white 1px; } }
+
+/*mapa*/
+.boton-facebook {
+  background-color: #18429e;
+  border: #18429e; }
+
+.boton-instagram {
+  background-color: #d42157;
+  border: #d42157; }
+
+.boton-whatsapp {
+  background-color: #1ead1e;
+  border: #1ead1e; }

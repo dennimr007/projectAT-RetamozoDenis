@@ -1,0 +1,71 @@
+#gridHome {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu"
+        "titulo titulo titulo"
+        "carousel carousel carousel"
+        "info info info"
+        "info info info"
+        "info info info"
+        "footer footer footer";
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.titulo {
+    grid-area: titulo;
+
+
+}
+
+.carousel {
+    grid-area: carousel;
+
+}
+
+.slide {
+    width: 95%;
+    margin: 10px;
+    margin: 10px;
+    border-bottom: solid white 4px;
+}
+
+.info {
+    grid-area: info;
+    margin-top: 20px;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid white;
+
+    .info1 {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .info2 {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .info3 {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .infoFoto {
+        margin: 5px 5px 5px 5px;
+        padding: 7px 7px 7px 7px;
+        align-self: baseline;
+        width: 25%;
+
+    }
+
+    .infoTexto {
+        text-align: center;
+    }
+}
+
